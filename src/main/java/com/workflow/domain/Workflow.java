@@ -36,7 +36,7 @@ public class Workflow {
             throw new IllegalArgumentException("Task cannot be null");
         }
         boolean taskAlreadyExist = tasks.stream().anyMatch(anyTaskInTheListTasks ->
-                anyTaskInTheListTasks.getId().equals(task));
+                anyTaskInTheListTasks.getId().equals(task.getId()));
 
         if(taskAlreadyExist){
             throw new IllegalArgumentException("Task with this ID already exist:" + task.getId());
