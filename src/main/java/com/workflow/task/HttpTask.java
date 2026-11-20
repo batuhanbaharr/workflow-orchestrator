@@ -4,7 +4,7 @@ import com.workflow.domain.Task;
 
 public class HttpTask extends Task {
 
-    public HttpTask(String name, String id){
+    public HttpTask(String id, String name){
         super(id, name);
     }
 
